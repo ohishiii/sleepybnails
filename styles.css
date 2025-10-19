@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana;
+}
+
+body {
+  background-color: #e7f0f6;
+  color: #395886;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  /* background-color: rgba(231, 240, 246, 0.3); semi-transparent */
+ background-color: rgba(255, 255, 255, 0.4); /* whiter and more opaque */
+  backdrop-filter: blur(20px); /* gives glass effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0 5%;
+  overflow-x: hidden;
+}
+
+/* --- Top navigation links (on top left) --- */
+.top-nav {
+  position: absolute;
+  left: 5%;
+  display: flex;
+  gap: 25px;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #395886;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.top-nav a:hover {
+  color: #638ECB;
+}
+
+/* Brand in the center */
+.brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #395886;
+  font-family: 'Gabriola';
+}
+
+/* Search icon on the right */
+.search-icon {
+  position: absolute;
+  right: 5%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #395886;
+}
+
+.hero {
+  position: relative;
+  font-family: Verdana;
+  color: #395886;
+  display: flex;
+  flex-direction: column; /* stack image and content */
+  align-items: center;
+  justify-content: flex-end; /* push hero-content to bottom */
+  gap: 0;
+}
+
+/* Hero image container sets height */
+.hero-image {
+  width: 100%;
+  height: 1050px; /* adjust hero height here */
+  overflow: hidden;
+}
+
+/* Image fills the container fully */
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cover full container */
+  display: block;
+}
+
+/* Hero content sits over the bottom part of the image */
+.hero-content {
+  position: relative;
+  margin-top: -250px; /* negative margin to overlap image */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 5%;
+   background-color: rgba(255, 255, 255, 0.4); /* whiter and more opaque */
+  backdrop-filter: blur(20px);
+  gap: 60px;
+  border-radius: 15px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+
+
+/* Left side - About Us */
+.hero-about {
+  flex: 1;
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.hero-about .second {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #395886;
+  margin-bottom: 15px;
+}
+
+.hero-about p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #638ecb;
+  line-height: 1.6;
+}
+
+/* Right side - Hero Text */
+.hero-text {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-text .second {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #395886;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  color: #638ecb;
+  margin-bottom: 20px;
+}
+
+.hero-text .btn {
+  background-color: #395886;
+  color: #f0f3fa;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.hero-text .btn:hover {
+  background-color: #638ecb;
+}
+
+
+
+
+/* --- Button --- */
+.btn {
+  display: inline-block;
+  background-color: #638ECB;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #395886;
+}
+
+/* --- New Arrivals Section (Blue Theme) --- */
+.new-arrivals {
+  background: linear-gradient(135deg, #B1C9EF, #8AAEE0);
+  text-align: center;
+  padding: 60px 8%;
+  color: #fff;
+  font-family: Verdana;
+}
+
+.arrivals-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.arrivals-header h3 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: #F0F3FA;
+}
+
+.arrivals-header span {
+  font-size: 1rem;
+  opacity: 1;
+  color: #F0F3FA;
+}
+
+.arrivals-grid {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  flex-wrap: wrap;
+}
+
+.item {
+  background: #F0F3FA;
+  border-radius: 25px;
+  padding: 25px;
+  width: 300px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(57, 88, 134, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-8px);
+}
+
+.eco-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #8AAEE0;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.item h4 {
+  margin-top: 15px;
+  color: #395886;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.learn-btn {
+  margin-top: 15px;
+  background: #638ECB;
+  color: #F0F3FA;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.learn-btn:hover {
+  background: #395886;
+}
+
+
+/* --- About Section --- */
+.about {
+  padding: 80px 10%;
+  background-color: #D5DEEF;
+  text-align: center;
+}
+
+.about h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #395886;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: #8AAEE0;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}

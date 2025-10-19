@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SleepyBnails / Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="top-nav">
+      <a href="#">Explore</a>
+      <a href="#">Collections</a>
+      <a href="#">About</a>
+      <a href="#">Reviews</a>
+    </nav>
+    <h1 class="brand">SleepyBnails</h1>
+    <div class="search-icon">🔍</div>
+  </header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <!-- Full-width image -->
+  <div class="hero-image">
+    <img src="Images/bg3.jpg" alt="Nail design" />
+  </div>
+
+  <!-- Two-column section below -->
+  <div class="hero-content">
+    <!-- Left: About Us -->
+    <div class="hero-about">
+      <p>About Us</p>
+      <p class="second">What we do</p>
+      
+    </div>
+
+    <!-- Right: Hero Text -->
+    <div class="hero-text">
+      <p class="second">Your nails, your style.</p>
+      <p>Each SleepyBnails design brings elegance, creativity, and confidence to your fingertips.</p>
+      <a href="#" class="btn">Learn more -></a>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- New Arrivals Section -->
+<section class="new-arrivals">
+  <div class="arrivals-header">
+    <span class="choice">Bloggers' Choice</span>
+    <h3>NEW ARRIVALS</h3>
+    <span class="bestsellers">Bestsellers</span>
+  </div>
+
+  <div class="arrivals-grid">
+    <div class="item">
+      <div class="eco-badge">🌿 HOT</div>
+      <img src="Images/Nail1.jpg" alt="Cloudy Blue" />
+      <h4>Cloudy Blue</h4>
+      <button class="learn-btn">Learn more</button>
+    </div>
+
+    <div class="item">
+      <div class="eco-badge">🌿 HOT</div>
+      <img src="Images/Nail1.jpg" alt="Ocean Glaze" />
+      <h4>Ocean Glaze</h4>
+      <button class="learn-btn">Learn more</button>
+    </div>
+
+    <div class="item">
+      <div class="eco-badge">🌿 HOT</div>
+      <img src="Images/Nail1.jpg" alt="Midnight Sky" />
+      <h4>Midnight Sky</h4>
+      <button class="learn-btn">Learn more</button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="about-content">
+      <h3>About SleepyBnails</h3>
+      <p>We’re passionate about helping everyone feel confident with beautiful nails. Each set is handcrafted with care, comfort, and creativity.</p>
+      <a href="#" class="btn">More about us</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> SleepyBnails — All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
